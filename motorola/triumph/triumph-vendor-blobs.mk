@@ -95,7 +95,9 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libcommondefs.so:/obj/lib/libcommondefs.so \
-    vendor/motorola/triumph/proprietary/libcommondefs.so:/system/lib/libcommondefs.so
+    vendor/motorola/triumph/proprietary/libcommondefs.so:/system/lib/libcommondefs.so \
+    vendor/motorola/triumph/proprietary/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
+    vendor/motorola/triumph/proprietary/libgps.so:system/lib/libgps.so
 
 # OMX
 PRODUCT_COPY_FILES += \
