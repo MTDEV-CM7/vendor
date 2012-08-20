@@ -81,13 +81,6 @@ PRODUCT_COPY_FILES += \
 #    vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
 #    vendor/motorola/triumph/proprietary/libgsl.so:/system/lib/libgsl.so
 
-# Audio
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/libaudioalsa.so:/obj/lib/libaudioalsa.so \
-    vendor/motorola/triumph/proprietary/libaudioalsa.so:/system/lib/libaudioalsa.so \
-    vendor/motorola/triumph/proprietary/libaudioeq.so:/system/lib/libaudioeq.so \
-    vendor/motorola/triumph/proprietary/liba2dp.so:/system/lib/liba2dp.so
-
 # Sensors
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/sensors.qcom.so:/system/lib/hw/sensors.triumph.so
