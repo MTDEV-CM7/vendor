@@ -131,6 +131,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libqueue.so:/system/lib/libqueue.so \
     vendor/motorola/triumph/proprietary/libdll.so:/system/lib/libdll.so \
     vendor/motorola/triumph/proprietary/libcm.so:/system/lib/libcm.so \
+    vendor/motorola/triumph/proprietary/libcm3623Tool.so:/system/lib/libcm3623Tool.so \
     vendor/motorola/triumph/proprietary/libmmgsdilib.so:/system/lib/libmmgsdilib.so \
     vendor/motorola/triumph/proprietary/libgsdi_exp.so:/system/lib/libgsdi_exp.so \
     vendor/motorola/triumph/proprietary/libgstk_exp.so:/system/lib/libgstk_exp.so \
