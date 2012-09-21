@@ -79,6 +79,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/motorola/triumph/proprietary/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
     vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
+    vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
+    vendor/motorola/triumph/proprietary/egl.cfg:/system/lib/egl/egl.cfg \
     vendor/motorola/triumph/proprietary/libgsl.so:/system/lib/libgsl.so
 
 # Sensors
