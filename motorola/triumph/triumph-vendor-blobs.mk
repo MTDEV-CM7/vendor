@@ -41,24 +41,22 @@ PRODUCT_COPY_FILES += \
 
 # MM
 PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libmm-abl.so:system/lib/libmm-abl.so \
+    vendor/motorola/triumph/proprietary/libmmgsdilib.so:system/lib/libmmgsdilib.so \
+    vendor/motorola/triumph/proprietary/libmmipl.so:system/lib/libmmipl.so \
+    vendor/motorola/triumph/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \
+    vendor/motorola/triumph/proprietary/libmm-omxcore.so:system/lib/libmm-omxcore.so \
+    vendor/motorola/triumph/proprietary/libmmosal.so:system/lib/libmmosal.so \
+    vendor/motorola/triumph/proprietary/libmmparser.so:system/lib/libmmparser.so \
+    vendor/motorola/triumph/proprietary/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     vendor/motorola/triumph/proprietary/mm-abl-test:/system/bin/mm-abl-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxaac-test:/system/bin/mm-adec-omxaac-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxadpcm-test:/system/bin/mm-adec-omxadpcm-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxamr-test:/system/bin/mm-adec-omxamr-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxamrwb-test:/system/bin/mm-adec-omxamrwb-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxevrc-test:/system/bin/mm-adec-omxevrc-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxmp3-test:/system/bin/mm-adec-omxmp3-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxQcelp13-test:/system/bin/mm-adec-omxQcelp13-test \
-    vendor/motorola/triumph/proprietary/mm-adec-omxwma-test:/system/bin/mm-adec-omxwma-test \
-    vendor/motorola/triumph/proprietary/mm-adspsvc-test:/system/bin/mm-adspsvc-test \
-    vendor/motorola/triumph/proprietary/mm-aenc-omxaac-test:/system/bin/mm-aenc-omxaac-test \
-    vendor/motorola/triumph/proprietary/mm-aenc-omxamr-test:/system/bin/mm-aenc-omxamr-test \
-    vendor/motorola/triumph/proprietary/mm-aenc-omxevrc-test:/system/bin/mm-aenc-omxevrc-test \
-    vendor/motorola/triumph/proprietary/mm-aenc-omxqcelp13-test:/system/bin/mm-aenc-omxqcelp13-test \
+    vendor/motorola/triumph/proprietary/mm-adec-omxQcelpHw-test:/system/bin/mm-adec-omxQcelpHw-test \
+    vendor/motorola/triumph/proprietary/mm-adec-omxvam-test:/system/bin/mm-adec-omxvam-test \
     vendor/motorola/triumph/proprietary/mm-audio-alsa-test:/system/bin/mm-audio-alsa-test \
     vendor/motorola/triumph/proprietary/mm-audio-ctrl-test:/system/bin/mm-audio-ctrl-test \
-    vendor/motorola/triumph/proprietary/mm-audio-mvs-test-int:/system/bin/mm-audio-mvs-test-int \
+    vendor/motorola/triumph/proprietary/mm-audio-mvs-test:/system/bin/mm-audio-mvs-test \
     vendor/motorola/triumph/proprietary/mm-audio-mvs-test-ext:/system/bin/mm-audio-mvs-test-ext \
+    vendor/motorola/triumph/proprietary/mm-audio-mvs-test-int:/system/bin/mm-audio-mvs-test-int \
     vendor/motorola/triumph/proprietary/mm-audio-native-test:/system/bin/mm-audio-native-test \
     vendor/motorola/triumph/proprietary/mm-audio-voem_if-test:/system/bin/mm-audio-voem_if-test \
     vendor/motorola/triumph/proprietary/mm-jpeg-dec-test:/system/bin/mm-jpeg-dec-test \
@@ -67,11 +65,22 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/mm-qcamera-test:/system/bin/mm-qcamera-test \
     vendor/motorola/triumph/proprietary/mm-qcamera-testsuite-client:/system/bin/mm-qcamera-testsuite-client \
     vendor/motorola/triumph/proprietary/mm-vdec-omx-test:/system/bin/mm-vdec-omx-test \
-    vendor/motorola/triumph/proprietary/mm-venc-omx-test:/system/bin/mm-venc-omx-test \
     vendor/motorola/triumph/proprietary/mm-venc-omx-test720p:/system/bin/mm-venc-omx-test720p \
     vendor/motorola/triumph/proprietary/mm-video-driver-test:/system/bin/mm-video-driver-test \
     vendor/motorola/triumph/proprietary/mm-video-encdrv-test:/system/bin/mm-video-encdrv-test \
+    vendor/motorola/triumph/proprietary/omx_tests:/system/bin/omx_tests \
+    vendor/motorola/triumph/proprietary/test_gemini:/system/bin/test_gemini \
+    vendor/motorola/triumph/proprietary/sw-adec-omxaac-test:/system/bin/sw-adec-omxaac-test \
+    vendor/motorola/triumph/proprietary/sw-adec-omxamr-test:/system/bin/sw-adec-omxamr-test \
+    vendor/motorola/triumph/proprietary/sw-adec-omxamrwb-test:/system/bin/sw-adec-omxamrwb-test \
+    vendor/motorola/triumph/proprietary/sw-adec-omxamrwb-test:/system/bin/sw-adec-omxamrwb-test \
     vendor/motorola/triumph/proprietary/libgemini.so:/system/lib/libgemini.so
+
+# Media
+PRODUCT_COPY_FILES += \
+    device/motorola/triumph/prebuilt/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
+    device/motorola/triumph/prebuilt/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+vendor/motorola/triumph/proprietary/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so
 
 # egl
 PRODUCT_COPY_FILES += \
