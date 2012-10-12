@@ -78,9 +78,9 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/prebuilt/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
-    device/motorola/triumph/prebuilt/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-vendor/motorola/triumph/proprietary/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so
+    vendor/motorola/triumph/proprietary/libaudioalsa.so:system/lib/libaudioalsa.so \
+    vendor/motorola/triumph/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
+    vendor/motorola/triumph/proprietary/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so
 
 # egl
 PRODUCT_COPY_FILES += \
