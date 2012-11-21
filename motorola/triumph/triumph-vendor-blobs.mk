@@ -95,8 +95,12 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/loc_api_app:/system/bin/loc_api_app \
     vendor/motorola/triumph/proprietary/libcommondefs.so:/obj/lib/libcommondefs.so \
     vendor/motorola/triumph/proprietary/libcommondefs.so:/system/lib/libcommondefs.so \
+    vendor/motorola/triumph/proprietary/libgps.so:/system/lib/libgps.so  \
+    vendor/motorola/triumph/proprietary/libloc-rpc.so:/system/lib/libloc-rpc.so  \
+    vendor/motorola/triumph/proprietary/libloc_ext.so:/system/lib/libloc_ext.so  \
     vendor/motorola/triumph/proprietary/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so 
 
 
