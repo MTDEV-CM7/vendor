@@ -19,13 +19,24 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/qmuxd:/system/bin/qmuxd \
     vendor/motorola/triumph/proprietary/hci_qcomm_init:/system/bin/hci_qcomm_init
 
+
+
+# Sensors HW
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/sensors.qcom.so:/system/lib/hw/sensors.triumph.so \
+    vendor/motorola/triumph/proprietary/libsensorjni.so:/system/lib/hw/libsensorjni.so
+
 # Sensors binaries
 PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/debug_sensors:/system/bin/debug_sensors \
     vendor/motorola/triumph/proprietary/geomagneticd:/system/bin/geomagneticd \
+    vendor/motorola/triumph/proprietary/gsensorcalibration:/system/bin/gsensorcalibration \
     vendor/motorola/triumph/proprietary/orientationd:/system/bin/orientationd \
     vendor/motorola/triumph/proprietary/proximityd:/system/bin/proximityd \
     vendor/motorola/triumph/proprietary/lightd:/system/bin/lightd \
     vendor/motorola/triumph/proprietary/thermald:/system/bin/thermald
+
+
 
 # other binaries
 PRODUCT_COPY_FILES += \
@@ -36,16 +47,133 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/port-bridge:/system/bin/port-bridge \
     vendor/motorola/triumph/proprietary/btwlancoex:/system/bin/btwlancoex 
 
+
+
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/loc_api_app:/system/bin/loc_api_app \
+    vendor/motorola/triumph/proprietary/libcommondefs.so:/obj/lib/libcommondefs.so \
+    vendor/motorola/triumph/proprietary/libcommondefs.so:/system/lib/libcommondefs.so \
+    vendor/motorola/triumph/proprietary/libgps.so:/system/lib/libgps.so  \
+    vendor/motorola/triumph/proprietary/libloc-rpc.so:/system/lib/libloc-rpc.so  \
+    vendor/motorola/triumph/proprietary/libloc_ext.so:/system/lib/libloc_ext.so  \
+    vendor/motorola/triumph/proprietary/libloc_api-rpc-qc.so:/system/lib/libloc_api-rpc-qc.so 
+
+
+
+# Miscellaneous Dependencies
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libdrm1.so:/system/lib/libdrm1.so  \
+    vendor/motorola/triumph/proprietary/libdl.so:/system/lib/libdl.so  \
+    vendor/motorola/triumph/proprietary/libdl.so:/obj/lib/libdl.so  \
+    vendor/motorola/triumph/proprietary/libxml.so:/system/lib/libxml.so  \
+    vendor/motorola/triumph/proprietary/libxml.so:/obj/lib/libxml.so  
+
+
+
+# egl
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
+    vendor/motorola/triumph/proprietary/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
+    vendor/motorola/triumph/proprietary/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
+    vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
+    vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
+    vendor/motorola/triumph/proprietary/egl.cfg:/system/lib/egl/egl.cfg \
+    vendor/motorola/triumph/proprietary/egl.cfg:/obj/lib/egl/egl.cfg \
+    vendor/motorola/triumph/proprietary/libsrsprocessing.so:/system/lib/libsrsprocessing.so \
+    vendor/motorola/triumph/proprietary/libsrsprocessing.so:/obj/lib/libsrsprocessing.so \
+    vendor/motorola/triumph/proprietary/libgsl.so:/system/lib/libgsl.so \
+    vendor/motorola/triumph/proprietary/libgsl.so:/obj/lib/libgsl.so \
+    vendor/motorola/triumph/proprietary/libuim.so:/system/lib/libuim.so  
+
+
+
+# OMX
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/omx_tests:/system/bin/omx_tests \
+    vendor/motorola/triumph/proprietary/libqcomm_omx.so:/system/lib/libqcomm_omx.so \
+    vendor/motorola/triumph/proprietary/libOmxAacDec.so:/system/lib/libOmxAacDec.so \
+    vendor/motorola/triumph/proprietary/libOmxAacEnc.so:/system/lib/libOmxAacEnc.so \
+    vendor/motorola/triumph/proprietary/libOmxAdpcmDec.so:/system/lib/libOmxAdpcmDec.so \
+    vendor/motorola/triumph/proprietary/libOmxAmrDec.so:/system/lib/libOmxAmrDec.so \
+    vendor/motorola/triumph/proprietary/libOmxAmrEnc.so:/system/lib/libOmxAmrEnc.so \
+    vendor/motorola/triumph/proprietary/libOmxAmrRtpDec.so:/system/lib/libOmxAmrRtpDec.so \
+    vendor/motorola/triumph/proprietary/libOmxAmrwbDec.so:/system/lib/libOmxAmrwbDec.so \
+    vendor/motorola/triumph/proprietary/libOmxEvrcDec.so:/system/lib/libOmxEvrcDec.so \
+    vendor/motorola/triumph/proprietary/libOmxEvrcEnc.so:/system/lib/libOmxEvrcEnc.so \
+    vendor/motorola/triumph/proprietary/libOmxH264Dec.so:/system/lib/libOmxH264Dec.so \
+    vendor/motorola/triumph/proprietary/libOmxMp3Dec.so:/system/lib/libOmxMp3Dec.so \
+    vendor/motorola/triumph/proprietary/libOmxQcelp13Dec.so:/system/lib/libOmxQcelp13Dec.so \
+    vendor/motorola/triumph/proprietary/libOmxQcelp13Enc.so:/system/lib/libOmxQcelp13Enc.so \
+    vendor/motorola/triumph/proprietary/libOmxQcelpHwDec.so:/system/lib/libOmxQcelpHwDec.so \
+    vendor/motorola/triumph/proprietary/libOmxWmaDec.so:/system/lib/libOmxWmaDec.so \
+    vendor/motorola/triumph/proprietary/libOmxCore.so:/system/lib/libOmxCore.so 
+
+#   vendor/motorola/triumph/proprietary/libOmxCore.so:/system/lib/libOmxCore.so \
+#   vendor/motorola/triumph/proprietary/libOmxVdec.so:/system/lib/libOmxVdec.so \
+#   vendor/motorola/triumph/proprietary/libOmxVenc.so:/system/lib/libOmxVenc.so \
+
+
+# OMX Sharedlibrary
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libomx_sharedlibrary.so:/system/lib/libomx_sharedlibrary.so \
+        vendor/motorola/triumph/proprietary/libomx_aacdec_sharedlibrary.so:/system/lib/libomx_aacdec_sharedlibrary.so \
+        vendor/motorola/triumph/proprietary/libomx_amrdec_sharedlibrary.so:/system/lib/libomx_amrdec_sharedlibrary.so \
+        vendor/motorola/triumph/proprietary/libomx_amrenc_sharedlibrary.so:/system/lib/libomx_amrenc_sharedlibrary.so \
+        vendor/motorola/triumph/proprietary/libomx_avcdec_sharedlibrary.so:/system/lib/libomx_avcdec_sharedlibrary.so \
+        vendor/motorola/triumph/proprietary/libomx_m4vdec_sharedlibrary.so:/system/lib/libomx_m4vdec_sharedlibrary.so \
+        vendor/motorola/triumph/proprietary/libomx_mp3dec_sharedlibrary.so:/system/lib/libomx_mp3dec_sharedlibrary.so 
+
+
+
+# OMX sw-adec-test
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/sw-adec-omxaac-test:/system/bin/sw-adec-omxaac-test \
+    vendor/motorola/triumph/proprietary/sw-adec-omxamr-test:/system/bin/sw-adec-omxamr-test \
+    vendor/motorola/triumph/proprietary/sw-adec-omxamrwb-test:/system/bin/sw-adec-omxamrwb-test \
+    vendor/motorola/triumph/proprietary/sw-adec-omxamrwb-test:/system/bin/sw-adec-omxamrwb-test
+
+
+
+# Opencore
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libopencore_common.so:/system/lib/libopencore_common.so \
+    vendor/motorola/triumph/proprietary/libopencore_author.so:/system/lib/libopencore_author.so \
+    vendor/motorola/triumph/proprietary/libopencore_download.so:/system/lib/libopencore_download.so \
+    vendor/motorola/triumph/proprietary/libopencore_downloadreg.so:/system/lib/libopencore_downloadreg.so \
+    vendor/motorola/triumph/proprietary/libopencorehw.so:/system/lib/libopencorehw.so \
+    vendor/motorola/triumph/proprietary/libopencore_mp4local.so:/system/lib/libopencore_mp4local.so \
+    vendor/motorola/triumph/proprietary/libopencore_mp4localreg.so:/system/lib/libopencore_mp4localreg.so \
+    vendor/motorola/triumph/proprietary/libopencore_net_support.so:/system/lib/libopencore_net_support.so \
+    vendor/motorola/triumph/proprietary/libopencore_player.so:/system/lib/libopencore_player.so \
+    vendor/motorola/triumph/proprietary/libopencore_rtsp.so:/system/lib/libopencore_rtsp.so \
+    vendor/motorola/triumph/proprietary/libopencore_rtspreg.so:/system/lib/libopencore_rtspreg.so \
+    vendor/motorola/triumph/proprietary/libOpenVG.so:/system/lib/libOpenVG.so 
+
+
+
+# Media
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libavcodec.so:/system/lib/libavcodec.so \
+    vendor/motorola/triumph/proprietary/libavformat.so:/system/lib/libavformat.so \
+    vendor/motorola/triumph/proprietary/libavutil.so:/system/lib/libavutil.so \
+    vendor/motorola/triumph/proprietary/libaudioalsa.so:/system/lib/libaudioalsa.so \
+    vendor/motorola/triumph/proprietary/libaudioalsa.so:/obj/lib/libaudioalsa.so \
+    vendor/motorola/triumph/proprietary/libdivxdrmdecrypt.so:/system/lib/libdivxdrmdecrypt.so  
+
+
+
 # MM
 PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/libmm-abl.so:system/lib/libmm-abl.so \
-    vendor/motorola/triumph/proprietary/libmmgsdilib.so:system/lib/libmmgsdilib.so \
-    vendor/motorola/triumph/proprietary/libmmipl.so:system/lib/libmmipl.so \
-    vendor/motorola/triumph/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \
-    vendor/motorola/triumph/proprietary/libmm-omxcore.so:system/lib/libmm-omxcore.so \
-    vendor/motorola/triumph/proprietary/libmmosal.so:system/lib/libmmosal.so \
-    vendor/motorola/triumph/proprietary/libmmparser.so:system/lib/libmmparser.so \
-    vendor/motorola/triumph/proprietary/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
+    vendor/motorola/triumph/proprietary/libmm-abl.so:/system/lib/libmm-abl.so \
+    vendor/motorola/triumph/proprietary/libmmgsdilib.so:/system/lib/libmmgsdilib.so \
+    vendor/motorola/triumph/proprietary/libmmipl.so:/system/lib/libmmipl.so \
+    vendor/motorola/triumph/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \
+    vendor/motorola/triumph/proprietary/libmm-omxcore.so:/system/lib/libmm-omxcore.so \
+    vendor/motorola/triumph/proprietary/libmmosal.so:/system/lib/libmmosal.so \
+    vendor/motorola/triumph/proprietary/libmmparser.so:/system/lib/libmmparser.so \
+    vendor/motorola/triumph/proprietary/libmmparser_divxdrmlib.so:/system/lib/libmmparser_divxdrmlib.so \
+    vendor/motorola/triumph/proprietary/mlog:/system/bin/mlog \
     vendor/motorola/triumph/proprietary/mm-abl-test:/system/bin/mm-abl-test \
     vendor/motorola/triumph/proprietary/mm-adec-omxQcelpHw-test:/system/bin/mm-adec-omxQcelpHw-test \
     vendor/motorola/triumph/proprietary/mm-adec-omxvam-test:/system/bin/mm-adec-omxvam-test \
@@ -65,69 +193,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/mm-venc-omx-test720p:/system/bin/mm-venc-omx-test720p \
     vendor/motorola/triumph/proprietary/mm-video-driver-test:/system/bin/mm-video-driver-test \
     vendor/motorola/triumph/proprietary/mm-video-encdrv-test:/system/bin/mm-video-encdrv-test \
-    vendor/motorola/triumph/proprietary/omx_tests:/system/bin/omx_tests \
     vendor/motorola/triumph/proprietary/test_gemini:/system/bin/test_gemini \
-    vendor/motorola/triumph/proprietary/sw-adec-omxaac-test:/system/bin/sw-adec-omxaac-test \
-    vendor/motorola/triumph/proprietary/sw-adec-omxamr-test:/system/bin/sw-adec-omxamr-test \
-    vendor/motorola/triumph/proprietary/sw-adec-omxamrwb-test:/system/bin/sw-adec-omxamrwb-test \
-    vendor/motorola/triumph/proprietary/sw-adec-omxamrwb-test:/system/bin/sw-adec-omxamrwb-test \
     vendor/motorola/triumph/proprietary/libgemini.so:/system/lib/libgemini.so
 
-# Media
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/libaudioalsa.so:system/lib/libaudioalsa.so \
-    vendor/motorola/triumph/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
-    vendor/motorola/triumph/proprietary/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so
 
-# egl
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
-    vendor/motorola/triumph/proprietary/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
-    vendor/motorola/triumph/proprietary/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
-    vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
-    vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
-    vendor/motorola/triumph/proprietary/egl.cfg:/system/lib/egl/egl.cfg \
-    vendor/motorola/triumph/proprietary/libgsl.so:/system/lib/libgsl.so
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/sensors.qcom.so:/system/lib/hw/sensors.triumph.so
-
-# GPS
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/loc_api_app:/system/bin/loc_api_app \
-    vendor/motorola/triumph/proprietary/libcommondefs.so:/obj/lib/libcommondefs.so \
-    vendor/motorola/triumph/proprietary/libcommondefs.so:/system/lib/libcommondefs.so \
-    vendor/motorola/triumph/proprietary/libgps.so:/system/lib/libgps.so  \
-    vendor/motorola/triumph/proprietary/libloc-rpc.so:/system/lib/libloc-rpc.so  \
-    vendor/motorola/triumph/proprietary/libloc_ext.so:/system/lib/libloc_ext.so  \
-    vendor/motorola/triumph/proprietary/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so 
-
-
-# OMX
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/libOmxEvrcEnc.so:/system/lib/libOmxEvrcEnc.so \
-    vendor/motorola/triumph/proprietary/libOmxAacDec.so:/system/lib/libOmxAacDec.so \
-    vendor/motorola/triumph/proprietary/libOmxQcelp13Dec.so:/system/lib/libOmxQcelp13Dec.so \
-    vendor/motorola/triumph/proprietary/libOmxAmrEnc.so:/system/lib/libOmxAmrEnc.so \
-    vendor/motorola/triumph/proprietary/libOmxAdpcmDec.so:/system/lib/libOmxAdpcmDec.so \
-    vendor/motorola/triumph/proprietary/libOmxEvrcDec.so:/system/lib/libOmxEvrcDec.so \
-    vendor/motorola/triumph/proprietary/libOmxAmrDec.so:/system/lib/libOmxAmrDec.so \
-    vendor/motorola/triumph/proprietary/libOmxAmrwbDec.so:/system/lib/libOmxAmrwbDec.so \
-    vendor/motorola/triumph/proprietary/libOmxWmaDec.so:/system/lib/libOmxWmaDec.so \
-    vendor/motorola/triumph/proprietary/libOmxQcelp13Enc.so:/system/lib/libOmxQcelp13Enc.so \
-    vendor/motorola/triumph/proprietary/libOmxMp3Dec.so:/system/lib/libOmxMp3Dec.so \
-    vendor/motorola/triumph/proprietary/libOmxAmrRtpDec.so:/system/lib/libOmxAmrRtpDec.so \
-    vendor/motorola/triumph/proprietary/libOmxAacEnc.so:/system/lib/libOmxAacEnc.so \
-    vendor/motorola/triumph/proprietary/libmm-adspsvc.so:/system/lib/libmm-adspsvc.so \
-    vendor/motorola/triumph/proprietary/libomx_aacdec_sharedlibrary.so:/system/lib/libomx_aacdec_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libomx_amrdec_sharedlibrary.so:/system/lib/libomx_amrdec_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libomx_amrenc_sharedlibrary.so:/system/lib/libomx_amrenc_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libomx_avcdec_sharedlibrary.so:/system/lib/libomx_avcdec_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libomx_m4vdec_sharedlibrary.so:/system/lib/libomx_m4vdec_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libomx_mp3dec_sharedlibrary.so:/system/lib/libomx_mp3dec_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libomx_sharedlibrary.so:/system/lib/libomx_sharedlibrary.so \
-    vendor/motorola/triumph/proprietary/libOmxCore.so:/system/lib/libOmxCore.so
 
 # RIL
 PRODUCT_COPY_FILES += \
@@ -136,6 +205,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libril-qc-1.so:/system/lib/libril-qc-1.so \
     vendor/motorola/triumph/proprietary/libreference-ril.so:/system/lib/libreference-ril.so \
     vendor/motorola/triumph/proprietary/libril-qcril-hook-oem.so:/system/lib/libril-qcril-hook-oem.so \
+    vendor/motorola/triumph/proprietary/libdl.so:/system/lib/libdl.so  \
     vendor/motorola/triumph/proprietary/libdiag.so:/system/lib/libdiag.so \
     vendor/motorola/triumph/proprietary/liboncrpc.so:/system/lib/liboncrpc.so \
     vendor/motorola/triumph/proprietary/libqmi.so:/system/lib/libqmi.so \
@@ -162,5 +232,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libdsi_netctrl.so:/system/lib/libdsi_netctrl.so \
     vendor/motorola/triumph/proprietary/libnetmgr.so:/system/lib/libnetmgr.so \
     vendor/motorola/triumph/proprietary/libpdapi.so:/system/lib/libpdapi.so \
-    vendor/motorola/triumph/proprietary/libpdsm_atl.so:/system/lib/libpdsm_atl.so \
-    vendor/motorola/triumph/proprietary/libuim.so:/system/lib/libuim.so
+    vendor/motorola/triumph/proprietary/libpdsm_atl.so:/system/lib/libpdsm_atl.so 
