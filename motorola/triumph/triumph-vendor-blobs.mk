@@ -24,7 +24,8 @@ PRODUCT_COPY_FILES += \
 # Sensors HW
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/sensors.qcom.so:/system/lib/hw/sensors.triumph.so \
-    vendor/motorola/triumph/proprietary/libsensorjni.so:/system/lib/hw/libsensorjni.so
+    vendor/motorola/triumph/proprietary/sensors.default.so:/system/lib/hw/sensors.default.so 
+
 
 # Sensors binaries
 PRODUCT_COPY_FILES += \
@@ -63,6 +64,8 @@ PRODUCT_COPY_FILES += \
 
 # Miscellaneous Dependencies
 PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libplayready.so:/system/lib/libplayready.so  \
+    vendor/motorola/triumph/proprietary/libping_mdm.so:/system/lib/libping_mdm.so  \
     vendor/motorola/triumph/proprietary/libdrm1.so:/system/lib/libdrm1.so  \
     vendor/motorola/triumph/proprietary/libdl.so:/system/lib/libdl.so  \
     vendor/motorola/triumph/proprietary/libdl.so:/obj/lib/libdl.so  \
@@ -106,8 +109,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libOmxQcelp13Dec.so:/system/lib/libOmxQcelp13Dec.so \
     vendor/motorola/triumph/proprietary/libOmxQcelp13Enc.so:/system/lib/libOmxQcelp13Enc.so \
     vendor/motorola/triumph/proprietary/libOmxQcelpHwDec.so:/system/lib/libOmxQcelpHwDec.so \
-    vendor/motorola/triumph/proprietary/libOmxWmaDec.so:/system/lib/libOmxWmaDec.so \
-    vendor/motorola/triumph/proprietary/libOmxCore.so:/system/lib/libOmxCore.so 
+    vendor/motorola/triumph/proprietary/libOmxVdec.so:/system/lib/libOmxVdec.so \
+    vendor/motorola/triumph/proprietary/libOmxVenc.so:/system/lib/libOmxVenc.so \
+    vendor/motorola/triumph/proprietary/libOmxWmaDec.so:/system/lib/libOmxWmaDec.so 
 
 #   vendor/motorola/triumph/proprietary/libOmxCore.so:/system/lib/libOmxCore.so \
 #   vendor/motorola/triumph/proprietary/libOmxVdec.so:/system/lib/libOmxVdec.so \
@@ -137,6 +141,8 @@ PRODUCT_COPY_FILES += \
 
 # Opencore
 PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libplayready.so:/system/lib/libplayready.so \
+    vendor/motorola/triumph/proprietary/libplayready.so:/obj/lib/libplayready.so \
     vendor/motorola/triumph/proprietary/libopencore_common.so:/system/lib/libopencore_common.so \
     vendor/motorola/triumph/proprietary/libopencore_author.so:/system/lib/libopencore_author.so \
     vendor/motorola/triumph/proprietary/libopencore_download.so:/system/lib/libopencore_download.so \
