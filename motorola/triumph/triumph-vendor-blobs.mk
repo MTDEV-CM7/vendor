@@ -17,9 +17,11 @@
 # HW init
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/qmuxd:/system/bin/qmuxd \
+    vendor/motorola/triumph/proprietary/hcitool:/system/xbin/hcitool \
+    vendor/motorola/triumph/proprietary/hcitool:/obj/xbin/hcitool \
     vendor/motorola/triumph/proprietary/hci_qcomm_init:/system/bin/hci_qcomm_init
 
-
+#vendor/motorola/triumph/proprietary/hcitool:/system/xbin/hcitool \
 
 # Sensors HW
 PRODUCT_COPY_FILES += \
@@ -50,20 +52,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-# GPS
-PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/loc_api_app:/system/bin/loc_api_app \
-    vendor/motorola/triumph/proprietary/libcommondefs.so:/obj/lib/libcommondefs.so \
-    vendor/motorola/triumph/proprietary/libcommondefs.so:/system/lib/libcommondefs.so \
-    vendor/motorola/triumph/proprietary/libgps.so:/system/lib/libgps.so  \
-    vendor/motorola/triumph/proprietary/libloc-rpc.so:/system/lib/libloc-rpc.so  \
-    vendor/motorola/triumph/proprietary/libloc_ext.so:/system/lib/libloc_ext.so  \
-    vendor/motorola/triumph/proprietary/libloc_api-rpc-qc.so:/system/lib/libloc_api-rpc-qc.so 
-
-
-
-
-# egl
+# egl Sharp 2.3.5
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
     vendor/motorola/triumph/proprietary/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
@@ -72,13 +61,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so \
     vendor/motorola/triumph/proprietary/egl.cfg:/system/lib/egl/egl.cfg \
     vendor/motorola/triumph/proprietary/egl.cfg:/obj/lib/egl/egl.cfg \
-    vendor/motorola/triumph/proprietary/libsrsprocessing.so:/system/lib/libsrsprocessing.so \
     vendor/motorola/triumph/proprietary/libgsl.so:/system/lib/libgsl.so \
     vendor/motorola/triumph/proprietary/libgsl.so:/obj/lib/libgsl.so  
 
 
 
-# OMX
+# OMX Cherry
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/omx_tests:/system/bin/omx_tests \
     vendor/motorola/triumph/proprietary/libOmxAacDec.so:/system/lib/libOmxAacDec.so \
@@ -100,7 +88,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-# OMX Sharedlibrary
+# OMX Sharedlibrary Cherry
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libomx_sharedlibrary.so:/system/lib/libomx_sharedlibrary.so \
         vendor/motorola/triumph/proprietary/libomx_aacdec_sharedlibrary.so:/system/lib/libomx_aacdec_sharedlibrary.so \
@@ -112,7 +100,7 @@ PRODUCT_COPY_FILES += \
 
 
 
-# Opencore
+# Opencore Cherry
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libopencore_common.so:/system/lib/libopencore_common.so \
     vendor/motorola/triumph/proprietary/libopencore_author.so:/system/lib/libopencore_author.so \
@@ -128,8 +116,10 @@ PRODUCT_COPY_FILES += \
 
 
 
-# Media
+# Media Cherry
 PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/liba2dp.so:/system/lib/liba2dp.so\
+    vendor/motorola/triumph/proprietary/libsrsprocessing.so:/system/lib/libsrsprocessing.so \
     vendor/motorola/triumph/proprietary/libavcodec.so:/system/lib/libavcodec.so \
     vendor/motorola/triumph/proprietary/libavformat.so:/system/lib/libavformat.so \
     vendor/motorola/triumph/proprietary/libavutil.so:/system/lib/libavutil.so \
@@ -137,24 +127,28 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libaudioalsa.so:/obj/lib/libaudioalsa.so   
 
 
-
-# RIL
+# RIL Triumph
 PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/rild:/system/bin/rild \
     vendor/motorola/triumph/proprietary/libril.so:/system/lib/libril.so \
-    vendor/motorola/triumph/proprietary/libril-qc-1.so:/system/lib/libril-qc-1.so \
+    vendor/motorola/triumph/proprietary/libril-qc-1.so:/system/lib/libril-qc-1.so 
+
+# RIL Cherry
+PRODUCT_COPY_FILES += \
+    vendor/motorola/triumph/proprietary/libmmgsdilib.so:/system/lib/libmmgsdilib.so \
+    vendor/motorola/triumph/proprietary/libcm.so:/system/lib/libcm.so \
+    vendor/motorola/triumph/proprietary/libcm3623Tool.so:/system/lib/libcm3623Tool.so \
+    vendor/motorola/triumph/proprietary/liboncrpc.so:/system/lib/liboncrpc.so 
+
+# RIL Sharp 2.3.5
+PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libreference-ril.so:/system/lib/libreference-ril.so \
     vendor/motorola/triumph/proprietary/libril-qcril-hook-oem.so:/system/lib/libril-qcril-hook-oem.so \
-    vendor/motorola/triumph/proprietary/libdl.so:/system/lib/libdl.so  \
     vendor/motorola/triumph/proprietary/libdiag.so:/system/lib/libdiag.so \
-    vendor/motorola/triumph/proprietary/liboncrpc.so:/system/lib/liboncrpc.so \
     vendor/motorola/triumph/proprietary/libqmi.so:/system/lib/libqmi.so \
     vendor/motorola/triumph/proprietary/libdsm.so:/system/lib/libdsm.so \
     vendor/motorola/triumph/proprietary/libqueue.so:/system/lib/libqueue.so \
     vendor/motorola/triumph/proprietary/libdll.so:/system/lib/libdll.so \
-    vendor/motorola/triumph/proprietary/libcm.so:/system/lib/libcm.so \
-    vendor/motorola/triumph/proprietary/libcm3623Tool.so:/system/lib/libcm3623Tool.so \
-    vendor/motorola/triumph/proprietary/libmmgsdilib.so:/system/lib/libmmgsdilib.so \
     vendor/motorola/triumph/proprietary/libgsdi_exp.so:/system/lib/libgsdi_exp.so \
     vendor/motorola/triumph/proprietary/libgstk_exp.so:/system/lib/libgstk_exp.so \
     vendor/motorola/triumph/proprietary/libwms.so:/system/lib/libwms.so \
@@ -172,4 +166,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/triumph/proprietary/libdsi_netctrl.so:/system/lib/libdsi_netctrl.so \
     vendor/motorola/triumph/proprietary/libnetmgr.so:/system/lib/libnetmgr.so \
     vendor/motorola/triumph/proprietary/libpdapi.so:/system/lib/libpdapi.so \
-    vendor/motorola/triumph/proprietary/libpdsm_atl.so:/system/lib/libpdsm_atl.so 
+    vendor/motorola/triumph/proprietary/libpdsm_atl.so:/system/lib/libpdsm_atl.so
