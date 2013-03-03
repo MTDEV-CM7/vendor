@@ -146,7 +146,6 @@ PRODUCT_COPY_FILES += \
 
 # RIL (Cherry)
 PRODUCT_COPY_FILES += \
-    vendor/motorola/triumph/proprietary/libmmgsdilib.so:/system/lib/libmmgsdilib.so \
     vendor/motorola/triumph/proprietary/libcm.so:/system/lib/libcm.so \
     vendor/motorola/triumph/proprietary/libcm3623Tool.so:/system/lib/libcm3623Tool.so
 
